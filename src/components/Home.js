@@ -1,11 +1,19 @@
 import React from "react";
 
+import EmployeeFormContainer from "../modules/employeeForm/containers/EmployeeFormContainer";
+import EmployeePaymentSlipContainer from "../modules/employeePaySlip/containers/EmployeePaymentSlipContainer";
+
 export default class Home extends React.Component {
-  render() {
-    return (
-      <div className="page-home">
-        <h4>Hello world!</h4>
-      </div>
-    );
-  }
+    constructor(props) {
+        super(props);
+    }
+
+    render() {
+        return (
+            <div className="page-home">
+                <EmployeeFormContainer />
+                <EmployeePaymentSlipContainer />
+            </div>
+        );
+    }
 }

@@ -8,7 +8,6 @@ const EmployeePaymentSlipComponent = (props) => {
     if (props.constructor === Object && propsEmpty == 0) {
         return (
             <div>
-                <legend>Pay Slip</legend>
                 <p>Unable to print Pay Slip. No Employee details provided</p>
             </div>
         )
@@ -16,7 +15,6 @@ const EmployeePaymentSlipComponent = (props) => {
     else {
         return (
             <div>
-                <legend>Payslip</legend>
                 <div>
                     <label>Pay Slip for the month: </label> {payPeriod}
                 </div>

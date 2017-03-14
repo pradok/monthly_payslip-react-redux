@@ -1,12 +1,14 @@
 import React from "react";
-import "../stylesheets/main.scss";
+import styles from '../stylesheets/main.scss'
 
 export default class App extends React.Component {
-  render() {
-    return (
-      <div className="container">
-        {this.props.children}
-      </div>
-    );
-  }
+    render() {
+        return (
+            <div className={`app-container`}>
+                <div className={`container ${styles.container}`}>
+                    {this.props.children}
+                </div>
+            </div>
+        );
+    }
 }

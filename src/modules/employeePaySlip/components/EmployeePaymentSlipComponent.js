@@ -1,5 +1,7 @@
 import React, {PropTypes} from 'react'
 
+import styles from '../styles/employeePaySlip.scss'
+
 
 const EmployeePaymentSlipComponent = (props) => {
     const propsEmpty = Object.keys(props).length;
@@ -14,24 +16,26 @@ const EmployeePaymentSlipComponent = (props) => {
     }
     else {
         return (
-            <div>
-                <div>
+            <div className={`${styles.employeePaySlip}`}>
+                <div className={`${styles.payPeriod}`}>
                     <label>Pay Slip for the month: </label> {payPeriod}
                 </div>
-                <div>
-                    <label>Employee Name:</label> {employeeName}
-                </div>
-                <div>
-                    <label>Gross Income:</label> {grossIncome}
-                </div>
-                <div>
-                    <label>Income Tax:</label> {incomeTax}
-                </div>
-                <div>
-                    <label>Net Income:</label> {netIncome}
-                </div>
-                <div>
-                    <label>Super:</label> {superAnnuation}
+                <div className={`${styles.payDetails}`}>
+                    <div>
+                        <label>Employee Name:</label> {employeeName}
+                    </div>
+                    <div>
+                        <label>Gross Income:</label> {grossIncome}
+                    </div>
+                    <div>
+                        <label>Income Tax:</label> {incomeTax}
+                    </div>
+                    <div>
+                        <label>Net Income:</label> {netIncome}
+                    </div>
+                    <div>
+                        <label>Super:</label> {superAnnuation}
+                    </div>
                 </div>
             </div>
         )

@@ -55,7 +55,7 @@ const EmployeeFormComponent = (props) => {
                     <Input
                         name="annualSalary"
                         value=""
-                        label="Annual Salary"
+                        label="Annual Salary ($)"
                         type="text"
                         validations={{
                             matchRegexp: /^\d+$/
@@ -69,7 +69,7 @@ const EmployeeFormComponent = (props) => {
                     <Input
                         name="superAnnuation"
                         value=""
-                        label="Super"
+                        label="Super (%)"
                         type="text"
                         validations={{
                             matchRegexp: /^\d+$/

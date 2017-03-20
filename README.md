@@ -19,3 +19,6 @@ Experiments with Saga.
     npm test
     ```
     
+### Notes/Assumptions
+1. Select any day/date of the month, pay slip will calculate for the remaining days including full month if first day selected.
+2. The remaining days include weekends, this may not be the best or accurate way to calculate the monthly pay.
